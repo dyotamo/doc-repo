@@ -1,13 +1,13 @@
+import re
 from django.core.exceptions import ValidationError
 
-def is_timetable(value):
-	points = value.split(', ')
+def validate_timetable(value):
+	if re.match(r'\d\d?, \d\d?, \d\d?, \d\d?', value):
+		points = value.split(', ')
 
-	if len(points) != 4:
-		raise ValidationError('%s is invalid' % value)
-
-	for x in points:
-		try:
-			int(x)
-		except ValueError:
-			raise ValidationError('%s is invalid' % value)			
+		if int(points[0]) >= 0 and int(points[0]) < int(points[1]) and int(points[1]) < int(points[2]) and int(points[2]) < int(points[3]) and int(points[3]) <= 24:
+			pass
+		else:
+			raise ValidationError('%s is not valid' % value)
+	else:
+		raise ValidationError('%s is not valid' % value)

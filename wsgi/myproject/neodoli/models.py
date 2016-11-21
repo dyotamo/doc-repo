@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
-from .validators import is_timetable
+from .validators import validate_timetable
 
 # Create your models here.
 
@@ -36,17 +36,19 @@ class Pharmacy(models.Model):
 	lat = models.FloatField('Latitude', blank=True, null=True)
 	lng = models.FloatField('Longitude', blank=True, null=True)
 
-	timetable = models.CharField(max_length=50, validators=[is_timetable,])
+	timetable = models.CharField(max_length=50, validators=[validate_timetable,])
 
 	def __str__(self):
 		return self.name
 
 	def working(self):
-		now = str(timezone.now().hour)
+		now = timezone.now().hour
 		points = self.timetable.split(', ')
 
-		if (now > points[0] and now < points[1] or now > points[2] and now < points[3]):
+		if now >= int(points[0]) and now < int(points[1]) or now >= int(points[2]) and now < int(points[3]):
 			return True
 		else:
 			return False
 		
+	class Meta:
+		verbose_name_plural = 'Pharmacies'

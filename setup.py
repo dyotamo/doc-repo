@@ -19,6 +19,7 @@ setup(
     install_requires=[
         'Django==1.8.4',
         'Djangorestframework==3.4.7',
+        'Django-admin-interface==0.2.0',
     ],
     dependency_links=[
         'https://pypi.python.org/simple/django/'
