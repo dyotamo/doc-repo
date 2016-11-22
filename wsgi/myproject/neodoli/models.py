@@ -49,6 +49,7 @@ class Pharmacy(models.Model):
 			return True
 		else:
 			return False
+	working.boolean = True
 		
 	class Meta:
 		verbose_name_plural = 'Pharmacies'

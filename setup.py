@@ -20,6 +20,7 @@ setup(
         'Django==1.8.4',
         'Djangorestframework==3.4.7',
         'Django-admin-interface==0.2.0',
+        'PyMySQL==0.6.7',
     ],
     dependency_links=[
         'https://pypi.python.org/simple/django/'
