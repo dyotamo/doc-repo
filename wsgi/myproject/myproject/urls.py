@@ -26,5 +26,6 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
 
-    url(r'^%s(?P<path>.*)$' % settings.MEDIA_URL, serve),
+    # O primeiro / da url não deve existir ...
+    url(r'^%s(?P<path>.*)$' % settings.MEDIA_URL[1:], serve),
 ]
