@@ -8,7 +8,7 @@ setup(
     # GETTING-STARTED: set your app version:
     version='1.0',
     # GETTING-STARTED: set your app description:
-    description='Find pharmacies near by you',
+    description='Find pharmacies, clinics and labs near by you',
     # GETTING-STARTED: set author name (your name):
     author='Dássone Yotamo (Neodoli)',
     # GETTING-STARTED: set author email (your email):
