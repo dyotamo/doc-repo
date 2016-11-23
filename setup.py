@@ -19,7 +19,7 @@ setup(
     install_requires=[
         'Django==1.8.4',
         'Djangorestframework==3.4.7',
-        'Django-admin-interface==0.2.0',
+        'Django-jet==1.0.3',
         'PyMySQL==0.6.7',
     ],
     dependency_links=[

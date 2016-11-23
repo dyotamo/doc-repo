@@ -19,9 +19,15 @@ cities = [
 	('pmb', 'Pemba'),
 ]
 
-class Pharmacy(models.Model):
+categories = [
+	('ph', 'Farmácia'),
+	('cli', 'Clínica'),
+	('lab', 'Laboratório'),
+]
 
-	""" Pharmacies profile """
+class Place(models.Model):
+
+	""" Pharmacies, Clinics and Labs profile """
 
 	name = models.CharField(max_length=35)
 	
@@ -50,9 +56,8 @@ class Pharmacy(models.Model):
 		else:
 			return False
 	working.boolean = True
-		
-	class Meta:
-		verbose_name_plural = 'Pharmacies'
+
+	category = models.CharField(max_length=3, choices=categories)
 
 
 # Not necessary for this app

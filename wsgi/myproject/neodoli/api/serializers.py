@@ -1,22 +1,23 @@
 from rest_framework import serializers
 
-from neodoli.models import Pharmacy
+from neodoli.models import Place
 
-class PharmacySerializer(serializers.ModelSerializer):
+class PlaceSerializer(serializers.ModelSerializer):
 
 	""" Pharmacies serializer """
 
 	working = serializers.SerializerMethodField()
 	city = serializers.SerializerMethodField()
+	category = serializers.SerializerMethodField()
 
 	def get_working(self, obj):
 		return obj.working()
 
 	def get_city(self, obj):
-		return obj.get_city_display()		
+		return obj.get_city_display()
+
+	def get_category(self, obj):
+		return obj.get_category_display()
 
 	class Meta:
-		model = Pharmacy
-
-	def get_days_since_joined(self, obj):
-		return (now() - obj.date_joined).days
+		model = Place

@@ -1,11 +1,12 @@
 from django.conf.urls import include, url
 from rest_framework import routers
-from rest_framework.authtoken import views
 
-from .viewsets import PharmacyViewSet
+from .viewsets import PharmacyViewSet, ClinicViewSet, LaboratoryViewSet
 
 router = routers.SimpleRouter()
 router.register(r'pharmacies', PharmacyViewSet)
+router.register(r'clinics', ClinicViewSet)
+router.register(r'labs', LaboratoryViewSet)
 
-urlpatterns = router.urls # + [url(r'^token-auth/$', views.obtain_auth_token),]
+urlpatterns = router.urls
 

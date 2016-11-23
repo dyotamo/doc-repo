@@ -1,14 +1,14 @@
 from django.contrib import admin
 from django.contrib.auth.models import Group
 
-from .models import Pharmacy
+from .models import Place
 
 # Register your models here.
 
-@admin.register(Pharmacy)
-class PharmacyAdmin(admin.ModelAdmin):
+@admin.register(Place)
+class PlaceAdmin(admin.ModelAdmin):
 
-	list_display = ['name', 'city', 'address', 'working',]
+	list_display = ['name', 'category', 'city', 'address', 'working',]
 
 # Remove Auth Group from the admin
 admin.site.unregister(Group)

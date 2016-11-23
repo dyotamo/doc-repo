@@ -42,7 +42,8 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = (
-	'flat',
+	# 'jet.dashboard',
+	'jet',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -143,3 +144,8 @@ REST_FRAMEWORK = {
 
 if not DEBUG:
 	REST_FRAMEWORK['DEFAULT_RENDERER_CLASSES'] =  ['rest_framework.renderers.JSONRenderer',]
+
+# Django Jet
+
+JET_DEFAULT_THEME = 'light-green'
+JET_SIDE_MENU_COMPACT = True
