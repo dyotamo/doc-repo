@@ -16,7 +16,8 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf import settings
-from django.conf.urls.static import static
+
+from .utils import serve
 
 urlpatterns = [
     url(r'^', include('neodoli.urls')),
@@ -24,7 +25,6 @@ urlpatterns = [
     url(r'^jet/', include('jet.urls', 'jet')),
 
     url(r'^admin/', include(admin.site.urls)),
-]
 
-urlpatterns += static(settings.MEDIA_URL,
-                        document_root=settings.MEDIA_ROOT)
+    url(r'^%s(?P<path>.*)$' % settings.MEDIA_URL, serve),
+]

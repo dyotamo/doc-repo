@@ -137,7 +137,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(WSGI_DIR, 'static')
 
-MEDIA_URL = '/uploads/'
+MEDIA_URL = 'uploads/'
 MEDIA_ROOT = DATA_DIR
 
 REST_FRAMEWORK = {
