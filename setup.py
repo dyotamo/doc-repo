@@ -21,6 +21,7 @@ setup(
         'Djangorestframework==3.4.7',
         'Django-jet==1.0.3',
         'PyMySQL==0.6.7',
+        'Pillow==2.7.0',
     ],
     dependency_links=[
         'https://pypi.python.org/simple/django/'

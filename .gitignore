@@ -7,3 +7,4 @@
 .pydevproject
 ssh.txt
 *.sqlite3
+data/*
