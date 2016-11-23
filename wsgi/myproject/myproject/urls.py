@@ -27,5 +27,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
     # O primeiro / da url não deve existir ...
+    # A MEDIA_URL deve conter / no início e fim, para dar
+    # a entender o o link é absoluto e não relativo
     url(r'^%s(?P<path>.*)$' % settings.MEDIA_URL[1:], serve),
 ]

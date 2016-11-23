@@ -52,7 +52,6 @@ class Place(models.Model):
 			return True
 		else:
 			return False
-	working.boolean = True
 
 	category = models.CharField(max_length=3, choices=categories)
 	image = models.ImageField(upload_to='%Y/%m/%d', blank=True, null=True)
