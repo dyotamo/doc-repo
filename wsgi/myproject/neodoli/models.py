@@ -42,17 +42,6 @@ class Place(models.Model):
 	lat = models.FloatField('Latitude', blank=True, null=True)
 	lng = models.FloatField('Longitude', blank=True, null=True)
 
-	timetable = models.CharField(max_length=50, validators=[validate_timetable,])
-
-	def working(self):
-		now = timezone.now().hour
-		points = self.timetable.split(', ')
-
-		if now >= int(points[0]) and now < int(points[1]) or now >= int(points[2]) and now < int(points[3]):
-			return True
-		else:
-			return False
-
 	category = models.CharField(max_length=3, choices=categories)
 	image = models.ImageField(upload_to='%Y/%m/%d', blank=True, null=True)
 
