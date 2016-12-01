@@ -2,7 +2,6 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
-import neodoli.validators
 
 
 class Migration(migrations.Migration):
@@ -25,7 +24,7 @@ class Migration(migrations.Migration):
                 ('email', models.EmailField(blank=True, null=True, max_length=50)),
                 ('lat', models.FloatField(blank=True, verbose_name='Latitude', null=True)),
                 ('lng', models.FloatField(blank=True, verbose_name='Longitude', null=True)),
-                ('timetable', models.CharField(validators=[neodoli.validators.validate_timetable], max_length=50)),
+                ('timetable', models.CharField(max_length=50)),
                 ('category', models.CharField(choices=[('ph', 'Farmácia'), ('cli', 'Clínica'), ('lab', 'Laboratório')], max_length=3)),
             ],
         ),

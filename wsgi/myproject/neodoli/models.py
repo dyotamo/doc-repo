@@ -1,33 +1,29 @@
 from django.db import models
 from django.utils import timezone
 
-from .validators import validate_timetable
-
-# Create your models here.
-
-cities = [
-	('mpt', 'Maputo'),
-	('mtl', 'Matola'),
-	('xai', 'Xai-Xai'),
-	('ibn', 'Inhambane'),
-	('btw', 'Beira'),
-	('chm', 'Chimoio'),
-	('tet', 'Tete'),
-	('qlm', 'Quelimane'),
-	('npl', 'Nampula'),
-	('lcg', 'Lichinga'),
-	('pmb', 'Pemba'),
-]
-
-categories = [
-	('ph', 'Farmácia'),
-	('cli', 'Clínica'),
-	('lab', 'Laboratório'),
-]
-
 class Place(models.Model):
 
 	""" Pharmacies, Clinics and Labs profile """
+
+	cities = [
+		('mpt', 'Maputo'),
+		('mtl', 'Matola'),
+		('xai', 'Xai-Xai'),
+		('ibn', 'Inhambane'),
+		('btw', 'Beira'),
+		('chm', 'Chimoio'),
+		('tet', 'Tete'),
+		('qlm', 'Quelimane'),
+		('npl', 'Nampula'),
+		('lcg', 'Lichinga'),
+		('pmb', 'Pemba'),
+	]
+
+	categories = [
+		('ph', 'Farmácia'),
+		('cli', 'Clínica'),
+		('lab', 'Laboratório'),
+	]
 
 	name = models.CharField(max_length=35)
 	

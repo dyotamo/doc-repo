@@ -2,7 +2,6 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
-import neodoli.validators
 
 
 class Migration(migrations.Migration):
@@ -15,6 +14,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='pharmacy',
             name='timetable',
-            field=models.CharField(max_length=50, validators=[neodoli.validators.validate_timetable]),
+            field=models.CharField(max_length=50),
         ),
     ]

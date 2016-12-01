@@ -1,15 +1,5 @@
-"""
-Django settings for myproject project.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/1.8/topics/settings/
-
-For the full list of settings and their values, see
-https://docs.djangoproject.com/en/1.8/ref/settings/
-"""
-
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 DJ_PROJECT_DIR = os.path.dirname(__file__)
 BASE_DIR = os.path.dirname(DJ_PROJECT_DIR)
 WSGI_DIR = os.path.dirname(BASE_DIR)
@@ -49,9 +39,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    'neodoli',
-    
+    'django.contrib.sites',
+    'django.contrib.redirects',
+    'neodoli',    
     'rest_framework',
 )
 
@@ -71,7 +61,7 @@ ROOT_URLCONF = 'myproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['%s/templates' % DJ_PROJECT_DIR,],
+        'DIRS': [os.path.join(DJ_PROJECT_DIR, 'templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -100,7 +90,6 @@ if DEBUG:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            # GETTING-STARTED: change 'db.sqlite3' to your sqlite3 database:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
@@ -141,7 +130,8 @@ MEDIA_ROOT = DATA_DIR
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 7
+    'PAGE_SIZE': 7,
+    'DEFAULT_FILTER_BACKENDS': ('rest_framework.filters.DjangoFilterBackend',),
 }
 
 if not DEBUG:
@@ -151,3 +141,7 @@ if not DEBUG:
 
 JET_DEFAULT_THEME = 'light-green'
 JET_SIDE_MENU_COMPACT = True
+
+
+# Sites
+SITE_ID = -1
