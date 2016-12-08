@@ -39,8 +39,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
-    'django.contrib.redirects',
     'neodoli',    
     'rest_framework',
 )
@@ -53,7 +51,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
 )
 
 # GETTING-STARTED: change 'myproject' to your project name:
@@ -142,7 +139,3 @@ if not DEBUG:
 
 JET_DEFAULT_THEME = 'green'
 JET_SIDE_MENU_COMPACT = True
-
-
-# Sites
-SITE_ID = 1
