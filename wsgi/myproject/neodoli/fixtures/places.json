@@ -1,0 +1,903 @@
+[
+{
+  "model": "neodoli.place",
+  "pk": 108,
+  "fields": {
+    "fax": "",
+    "name": "\u00c1frica",
+    "lng": null,
+    "address": "3015 B\u00ba Inhag\u00f3ia",
+    "tel1": "21477232",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 109,
+  "fields": {
+    "fax": "",
+    "name": "Albasine",
+    "lng": null,
+    "address": "B\u00ba Albasine",
+    "tel1": "21443202",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 110,
+  "fields": {
+    "fax": "",
+    "name": "Alvor",
+    "lng": null,
+    "address": "B\u00ba Benfica",
+    "tel1": "21472914",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 111,
+  "fields": {
+    "fax": "",
+    "name": "Apotheka",
+    "lng": null,
+    "address": "Av 24 Julho Centro Comercial Cimpor 11 2\u00ba",
+    "tel1": "21495633",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 112,
+  "fields": {
+    "fax": "",
+    "name": "Bem Sa\u00fade",
+    "lng": null,
+    "address": "Av Ind\u00fastrias 114 Machava",
+    "tel1": "21750009",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 113,
+  "fields": {
+    "fax": "",
+    "name": "Benfica",
+    "lng": null,
+    "address": "Av Mo\u00e7ambique 6666",
+    "tel1": "21470135",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 114,
+  "fields": {
+    "fax": "",
+    "name": "Cal\u00eandula",
+    "lng": null,
+    "address": "Av Eduardo Mondlane 2078 r/c",
+    "tel1": "21310909",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 115,
+  "fields": {
+    "fax": "",
+    "name": "Capital",
+    "lng": null,
+    "address": "Av Mao T Tung 637",
+    "tel1": "21496695",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 116,
+  "fields": {
+    "fax": "",
+    "name": "Compone",
+    "lng": null,
+    "address": "Av Vladmir Lenine 4649",
+    "tel1": "21419114",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 117,
+  "fields": {
+    "fax": "",
+    "name": "Cidade Lda",
+    "lng": null,
+    "address": "Av 24 Julho Centro 1150",
+    "tel1": "21315185",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 118,
+  "fields": {
+    "fax": "",
+    "name": "Chicanhanine",
+    "lng": null,
+    "address": "B\u00ba Laulane",
+    "tel1": "21442707",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 119,
+  "fields": {
+    "fax": "",
+    "name": "Denylson",
+    "lng": null,
+    "address": "R S\u00e9 Hotel Rovuma 114 Loja 15 r/c",
+    "tel1": "21308292",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 120,
+  "fields": {
+    "fax": "",
+    "name": "Expresso",
+    "lng": null,
+    "address": "R Beira B\u00ba Hulene Qt 24 1570",
+    "tel1": "21460905",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 121,
+  "fields": {
+    "fax": "",
+    "name": "Fajardo",
+    "lng": null,
+    "address": "R Capelo 32",
+    "tel1": "21403104",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 122,
+  "fields": {
+    "fax": "",
+    "name": "Franca",
+    "lng": null,
+    "address": "Av Eduardo Mondlane 2078 733",
+    "tel1": "21302955",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 123,
+  "fields": {
+    "fax": "",
+    "name": "Malanga",
+    "lng": null,
+    "address": "Av Rio Tembe 521 r/c",
+    "tel1": "21400345",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 124,
+  "fields": {
+    "fax": "",
+    "name": "Malhazine Lda",
+    "lng": null,
+    "address": "B\u00ba Malhazine",
+    "tel1": "21472512",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 125,
+  "fields": {
+    "fax": "",
+    "name": "Mirende",
+    "lng": null,
+    "address": "R Gare Mercadorias 48 r/c",
+    "tel1": "21486810",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 126,
+  "fields": {
+    "fax": "",
+    "name": "Moderna",
+    "lng": null,
+    "address": "Av Eduardo Mondlane 1425",
+    "tel1": "21424080",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 127,
+  "fields": {
+    "fax": "",
+    "name": "Nova",
+    "lng": null,
+    "address": "Av Vladmir Lenine 1296",
+    "tel1": "21322531",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 128,
+  "fields": {
+    "fax": "",
+    "name": "Oksana",
+    "lng": null,
+    "address": "Av 25 Setembro Pr Time Square 270 r/c",
+    "tel1": "21310742",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 129,
+  "fields": {
+    "fax": "",
+    "name": "Pires",
+    "lng": null,
+    "address": "5585 r/c B\u00ba George Dimitrov",
+    "tel1": "21472639",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 130,
+  "fields": {
+    "fax": "",
+    "name": "Regente Lda",
+    "lng": null,
+    "address": "Av Eduardo Mondlane 2970",
+    "tel1": "21404221",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 131,
+  "fields": {
+    "fax": "",
+    "name": "Roche",
+    "lng": null,
+    "address": "Av Julius Nyerere/Qt\u00ba 57 B\u00ba Laulane",
+    "tel1": "21443537",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 132,
+  "fields": {
+    "fax": "",
+    "name": "Socorro",
+    "lng": null,
+    "address": "Av Agostinho Neto 190 r/c",
+    "tel1": "21485208",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 133,
+  "fields": {
+    "fax": "",
+    "name": "T3",
+    "lng": null,
+    "address": "Rua 6 Bairro T3 3",
+    "tel1": "21708263",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 134,
+  "fields": {
+    "fax": "",
+    "name": "Violeta",
+    "lng": null,
+    "address": "Prolong Av Juluis Nyerere",
+    "tel1": "21442534",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 135,
+  "fields": {
+    "fax": "",
+    "name": "Vit\u00e1lia",
+    "lng": null,
+    "address": "Av Samora Machel 202 1\u00ba 2",
+    "tel1": "21323883",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 136,
+  "fields": {
+    "fax": "",
+    "name": "Nossa Farm\u00e1cia",
+    "lng": null,
+    "address": "Av Angola 40 r/c",
+    "tel1": "21407090",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 137,
+  "fields": {
+    "fax": "",
+    "name": "Sa\u00fade e Farm\u00e1cia Lda",
+    "lng": null,
+    "address": "R Faustino Vanombe 400 r/c",
+    "tel1": "21417090",
+    "lat": null,
+    "city": "mpt",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 138,
+  "fields": {
+    "fax": "",
+    "name": "Empresa Estatal de Farm\u00e1cias",
+    "lng": null,
+    "address": "Av Eduardo Mondlane 102",
+    "tel1": "23322110",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 139,
+  "fields": {
+    "fax": "",
+    "name": "Beira",
+    "lng": null,
+    "address": "Av Eduardo Mondlane 243",
+    "tel1": "23322288",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 140,
+  "fields": {
+    "fax": "",
+    "name": "Acad\u00eamica",
+    "lng": null,
+    "address": "Av 24 Julho 586",
+    "tel1": "23374777",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 141,
+  "fields": {
+    "fax": "",
+    "name": "786",
+    "lng": null,
+    "address": "R Machado Santos 31",
+    "tel1": "23320444",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 142,
+  "fields": {
+    "fax": "",
+    "name": "Bem Vindo",
+    "lng": null,
+    "address": "Av Armando Tivane Maquinino 1561 r/c",
+    "tel1": "23320356",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 143,
+  "fields": {
+    "fax": "",
+    "name": "Crystal",
+    "lng": null,
+    "address": "R Madeira 524",
+    "tel1": "23320978",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 144,
+  "fields": {
+    "fax": "",
+    "name": "Imp\u00e9rio",
+    "lng": null,
+    "address": "Av Alfredo Lawley Matacuane 757",
+    "tel1": "23361128",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 145,
+  "fields": {
+    "fax": "",
+    "name": "Manga",
+    "lng": null,
+    "address": "Manga",
+    "tel1": "23301236",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 146,
+  "fields": {
+    "fax": "",
+    "name": "Pereira",
+    "lng": null,
+    "address": "Av Eduardo Mondlane 440",
+    "tel1": "23322777",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 147,
+  "fields": {
+    "fax": "",
+    "name": "P\u00e9rola da Sa\u00fade",
+    "lng": null,
+    "address": "Av Alfredo Lawley 2430",
+    "tel1": "23324365",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 148,
+  "fields": {
+    "fax": "",
+    "name": "Poderoso",
+    "lng": null,
+    "address": "R S Tom\u00e9 Maquinino 152",
+    "tel1": "23322765",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 149,
+  "fields": {
+    "fax": "",
+    "name": "Ultramar",
+    "lng": null,
+    "address": "R Gov Augusto Castilho 172",
+    "tel1": "23322421",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 150,
+  "fields": {
+    "fax": "",
+    "name": "Universal Munhava",
+    "lng": null,
+    "address": "Av Acordos de Lusaka 230 r/c",
+    "tel1": "23354300",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 151,
+  "fields": {
+    "fax": "",
+    "name": "Sofarma Lda",
+    "lng": null,
+    "address": "R Madeira Maquinino 524 A r/c",
+    "tel1": "23903160",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 152,
+  "fields": {
+    "fax": "",
+    "name": "Pinto, Marisa Elisa",
+    "lng": null,
+    "address": "Rua 8 Macurungo 65 r/c",
+    "tel1": "23323226",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 153,
+  "fields": {
+    "fax": "",
+    "name": "Flora",
+    "lng": null,
+    "address": "Manga",
+    "tel1": "23301993",
+    "lat": null,
+    "city": "btw",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 154,
+  "fields": {
+    "fax": "",
+    "name": "Matola",
+    "lng": null,
+    "address": "B\u00ba Matola A",
+    "tel1": "",
+    "lat": null,
+    "city": "mtl",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 155,
+  "fields": {
+    "fax": "",
+    "name": "Matsule, Am\u00e9lia Matola",
+    "lng": null,
+    "address": "Av Joaquim Chissano 138",
+    "tel1": "21782959",
+    "lat": null,
+    "city": "mtl",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 156,
+  "fields": {
+    "fax": "",
+    "name": "700",
+    "lng": null,
+    "address": "Av 5 de Fevereiro 320 r/c B\u00ba Matola",
+    "tel1": "21781308",
+    "lat": null,
+    "city": "mtl",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 157,
+  "fields": {
+    "fax": "",
+    "name": "Celeiro",
+    "lng": null,
+    "address": "R Angola 42 B\u00ba Fomento",
+    "tel1": "21782756",
+    "lat": null,
+    "city": "mtl",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 158,
+  "fields": {
+    "fax": "",
+    "name": "Matiquite",
+    "lng": null,
+    "address": "R Juventude B\u00ba Matola G",
+    "tel1": "21783656",
+    "lat": null,
+    "city": "mtl",
+    "email": "",
+    "tel2": "",
+    "image": "",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 159,
+  "fields": {
+    "fax": "",
+    "name": "M\u2019Puatachane",
+    "lng": null,
+    "address": "Av Flores 7",
+    "tel1": "21706482",
+    "lat": null,
+    "city": "mtl",
+    "email": "",
+    "tel2": "",
+    "image": "2016/12/01/symbol.ico",
+    "category": "ph"
+  }
+},
+{
+  "model": "neodoli.place",
+  "pk": 160,
+  "fields": {
+    "fax": "",
+    "name": "Vida",
+    "lng": null,
+    "address": "Av Namaacha 733 r/c",
+    "tel1": "21724454",
+    "lat": null,
+    "city": "mtl",
+    "email": "",
+    "tel2": "",
+    "image": "2016/12/01/system.ico",
+    "category": "ph"
+  }
+}
+]

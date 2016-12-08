@@ -4,14 +4,16 @@ from rest_framework import filters
 from neodoli.models import Place
 from .serializers import PlaceSerializer
 
+
 class PlaceViewSet(viewsets.ReadOnlyModelViewSet):
 
-	queryset = Place.objects.all()
+	queryset = Place.objects.order_by('name')
 	serializer_class = PlaceSerializer
 
 	filter_fields = ('city',)
 
 	search_fields = ('name', 'city', 'address', 'email',)
+
 
 class PharmacyViewSet(viewsets.ReadOnlyModelViewSet):
 

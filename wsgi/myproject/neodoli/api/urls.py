@@ -4,7 +4,7 @@ from rest_framework import routers
 from .viewsets import (PlaceViewSet, PharmacyViewSet,
 						ClinicViewSet, LaboratoryViewSet,)
 
-router = routers.DefaultRouter()
+router = routers.SimpleRouter()
 
 router.register(r'places', PlaceViewSet)
 router.register(r'pharmacies', PharmacyViewSet)

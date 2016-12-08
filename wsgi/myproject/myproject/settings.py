@@ -53,6 +53,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
 )
 
 # GETTING-STARTED: change 'myproject' to your project name:
@@ -139,9 +140,9 @@ if not DEBUG:
 
 # Django Jet
 
-JET_DEFAULT_THEME = 'light-green'
+JET_DEFAULT_THEME = 'green'
 JET_SIDE_MENU_COMPACT = True
 
 
 # Sites
-SITE_ID = -1
+SITE_ID = 1
