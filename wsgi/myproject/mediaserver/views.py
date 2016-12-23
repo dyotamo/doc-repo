@@ -1,19 +1,23 @@
 import mimetypes
 import os
 
-from django.http import HttpResponse, Http404
+from django.http import FileResponse, Http404
 from django.conf import settings
 
 def serve(request, path):	
-	response = HttpResponse()
-	absolute_name = os.path.join(settings.DATA_DIR, path)
-
 	try:
-		with open(absolute_name, 'rb') as file:
-			for chunk in file:
-				response.write(chunk)
+		absolute_name = os.path.join(settings.MEDIA_ROOT, path)
+		response = FileResponse(open(absolute_name, 'rb'))
+		content_type = mimetypes.guess_type(absolute_name)[0]
+		response['Content-Type'] = content_type
+
+		try:
+			request.GET['download']
+			response['Content-Disposition'] = ('attachment; filename="file.%s"'
+												% content_type.split('/')[-1]) # Get file extension ...
+		except:
+			pass
+
+		return response
 	except IOError:
 		raise Http404
-
-	response['Content-type'] = mimetypes.guess_type(absolute_name)[0]
-	return response

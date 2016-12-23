@@ -1,9 +1,13 @@
 from rest_framework import viewsets
 from rest_framework import filters
+from rest_framework.response import Response
 
 from neodoli.models import Place
 from .serializers import PlaceSerializer
 
+
+fields = ('name', 'city',
+			'address', 'email',)
 
 class PlaceViewSet(viewsets.ReadOnlyModelViewSet):
 
@@ -11,8 +15,20 @@ class PlaceViewSet(viewsets.ReadOnlyModelViewSet):
 	serializer_class = PlaceSerializer
 
 	filter_fields = ('city',)
+	search_fields = fields
 
-	search_fields = ('name', 'city', 'address', 'email',)
+	def list(self, request):
+		try:
+			# If KeyError, to default ...
+			all = request.GET['all']
+			queryset = Place.objects.order_by('name')
+			serializer = PlaceSerializer(queryset,
+											many=True)
+
+			return Response(serializer.data)
+		except:
+			return super(PlaceViewSet,
+							self).list(request)
 
 
 class PharmacyViewSet(viewsets.ReadOnlyModelViewSet):
@@ -20,8 +36,7 @@ class PharmacyViewSet(viewsets.ReadOnlyModelViewSet):
 	queryset = Place.objects.filter(category='ph')
 	serializer_class = PlaceSerializer
 
-	filter_fields = ('city',)
-
+	filter_fields = fields
 	search_fields = ('name', 'city', 'address', 'email',)
 
 
@@ -31,8 +46,7 @@ class ClinicViewSet(viewsets.ReadOnlyModelViewSet):
 	serializer_class = PlaceSerializer
 
 	filter_fields = ('city',)
-
-	search_fields = ('name', 'city', 'address', 'email',)
+	search_fields = fields
 
 
 class LaboratoryViewSet(viewsets.ReadOnlyModelViewSet):
@@ -41,5 +55,4 @@ class LaboratoryViewSet(viewsets.ReadOnlyModelViewSet):
 	serializer_class = PlaceSerializer
 
 	filter_fields = ('city',)
-	
-	search_fields = ('name', 'city', 'address', 'email',)
+	search_fields = fields
