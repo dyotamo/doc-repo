@@ -4,7 +4,7 @@ DJ_PROJECT_DIR = os.path.dirname(__file__)
 BASE_DIR = os.path.dirname(DJ_PROJECT_DIR)
 WSGI_DIR = os.path.dirname(BASE_DIR)
 REPO_DIR = os.path.dirname(WSGI_DIR)
-DATA_DIR = os.environ.get('OPENSHIFT_DATA_DIR', '../../data/')
+DATA_DIR = os.environ.get('OPENSHIFT_DATA_DIR', os.path.join(REPO_DIR, 'data'))
 
 import sys
 sys.path.append(os.path.join(REPO_DIR, 'libs'))
@@ -88,7 +88,7 @@ if DEBUG:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            'NAME': os.path.join(DATA_DIR, 'db.sqlite3'),
         }
     }
 else:
